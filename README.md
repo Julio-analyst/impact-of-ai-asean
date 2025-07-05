@@ -44,7 +44,7 @@ In this project, we **visualize** and **forecast** the impact of AI adoption on 
 
 ## 🧠 Forecasting Model (LSTM)
 
-📁 [`forecasting-notebook.ipynb`](forecasting-notebook.ipynb)  
+📁 [`FORECASTING.ipynb`](./FORECASTING.ipynb)  
 🔧 **Tech Stack**: TensorFlow, Keras, Pandas, Matplotlib  
 🔍 **Steps**:
 - Scaled time-series GDP data with `MinMaxScaler`  
