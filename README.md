@@ -1,82 +1,97 @@
 # 📊 The Impact of AI on ASEAN Industry and Economy
 
-> 🏅 Finalist of Top 10 Infographic Competition — RASIO 8.0 ASEAN Statistics Olympiad  
-> 🏛️ Organized by FMIPA Universitas Padjadjaran, Statistics Day 2024
+> 🏅 **Top 10 Finalist** — Infographic Competition RASIO 8.0 (ASEAN-level)  
+> 🏛️ Organized by FMIPA Universitas Padjadjaran — *Statistics Day 2024*
 
 ---
 
 ## 🎯 Overview
 
-Artificial Intelligence (AI) is reshaping Southeast Asia’s industrial landscape and accelerating digital economic growth. In this project, we visualize and forecast the **impact of AI adoption on GDP by industry in ASEAN countries**, supported by deep learning forecasting techniques.
+Artificial Intelligence (AI) is reshaping Southeast Asia’s industrial landscape and accelerating digital economic growth.  
+In this project, we **visualize** and **forecast** the impact of AI adoption on GDP by industry in ASEAN countries using **deep learning (LSTM)**.
 
-📍 Focus: **Forecasting ASEAN Industrial GDP Growth influenced by AI adoption**  
-🧪 Method: LSTM Neural Networks  
-🎨 Output: Infographic selected as 10 Besar Finalis RASIO UNPAD se-ASEAN
+- 📍 **Focus**: Predictive modeling of ASEAN GDP by industry  
+- 🧪 **Method**: LSTM Neural Network (TensorFlow)  
+- 🎨 **Output**: Infographic finalist of RASIO 8.0 SE-ASEAN competition
 
 ---
 
 ## 🧵 Storyline
 
 1. **Background**  
-   Southeast Asia is a key region for global digital integration. With 72% of companies globally using AI, the technology serves as a productivity catalyst.
+   Southeast Asia is a key player in global digital transformation. With 72% of companies worldwide using AI, it has become a core driver of industrial productivity.
 
 2. **Research Focus**  
-   - Explore AI impact across industry verticals (tech, finance, gov, health, etc.)
-   - Forecast industry GDP growth with deep learning (LSTM)
+   - Analyze AI adoption across sectors: Tech, Finance, Government, Healthcare, etc.  
+   - Forecast GDP industry growth using LSTM neural networks
 
-3. **Insight Highlights**
-   - ASEAN GDP by industry projected to reach **3722 Bn USD in 2025**  
-   - Highest AI adoption: Technology (17%), Finance (15%), Telecom (15%)  
-   - Leading countries by manufacturing GDP share: 🇹🇭 Thailand (27%), 🇲🇾 Malaysia (23.4%), 🇮🇩 Indonesia (18.3%)
+3. **Key Insights**
+   - 📈 ASEAN GDP by industry forecasted to reach **$3722 Bn USD by 2025**  
+   - 💡 Highest AI adoption sectors: Tech (17%), Finance (15%), Telecom (15%)  
+   - 🌏 Top GDP contributors by manufacturing:  
+     - 🇹🇭 Thailand (27%)  
+     - 🇲🇾 Malaysia (24.8%)  
+     - 🇸🇬 Singapore (21.6%)  
+     - 🇮🇩 Indonesia (18.3%)
 
-4. **Applications of AI in Manufacturing**
-   - Robotics (Amazon), Predictive Maintenance (Washington DC Hydrants), Quality Control (Samsung, Nvidia), and Supply Chain (BMW)
-
----
-
-## 🧠 Model Forecasting
-
-Notebook: [`forecasting-notebook.ipynb`](forecasting-notebook.ipynb)  
-- Framework: TensorFlow / Keras  
-- Model: LSTM Neural Network  
-- Scaler: MinMaxScaler  
-- Input shape: sliding window 5-year GDP data  
-- Output: Forecast GDP ASEAN for 2025  
-- MSE used for evaluation
-
-> 📈 The model forecasts a **2.74% increase** in GDP by industry for ASEAN in 2025.
+4. **Real-world AI Use Cases in Manufacturing**
+   - 🤖 Robotics: Amazon (pick, pack, transfer)  
+   - 🛠️ Predictive Maintenance: INM (water hydrants, D.C.)  
+   - ✅ Quality Control: Samsung & Nvidia (chip production)  
+   - 🚚 Supply Chain: BMW (demand & inventory optimization)
 
 ---
 
-## 📁 Folder & File Structure
+## 🧠 Forecasting Model (LSTM)
 
-- `/data/Book1.csv` — Raw data used in modeling  
-- `/images/infographic-final.png` — Full infographic poster  
-- `/forecasting-notebook.ipynb` — LSTM model for GDP prediction  
-- `/certificates/` — Official RASIO finalist certificate  
-- `/originality-statement.pdf` — Declaration of original work
+📁 [`forecasting-notebook.ipynb`](forecasting-notebook.ipynb)  
+🔧 **Tech Stack**: TensorFlow, Keras, Pandas, Matplotlib  
+🔍 **Steps**:
+- Scaled time-series GDP data with `MinMaxScaler`  
+- Sliding window sequence of 5 years  
+- Trained LSTM to predict future GDP  
+- Evaluated with MSE (Mean Squared Error)
 
----
-
-## 🧾 Competition Info
-
-**RASIO 8.0 (Padjadjaran Statistics Olympiad)**  
-📌 Organized by Himpunan Mahasiswa Statistika FMIPA Universitas Padjadjaran  
-📅 Finalist announcement: October 2024  
-🌏 Level: ASEAN-wide competition  
-📃 Theme: The Impact of AI on Industry and Economy in Southeast Asia
+> 📊 **Result**: Model predicts **2.74% GDP growth** in 2025.
 
 ---
 
-## 🙋 Authors
+## 📂 Project Structure
 
-- Farrel Julio Akbar  
+```
+impact-of-ai-asean/
+│
+├── forecasting-notebook.ipynb     # Main LSTM modeling notebook
+├── data/Book1.csv                 # Raw GDP data (2015–2022)
+├── images/
+│   ├── infographic-final.png      # Infographic design
+│   └── chart_gdp_trend.png        # Forecast visualization
+├── certificates/                  # Official proof of finalist
+│   └── RASIO_Farrel_Certificate.pdf
+├── originality-statement.pdf
+└── README.md
+```
+
+---
+
+## 🏆 Competition Details
+
+**🎓 RASIO 8.0 — Padjadjaran Statistics Olympiad 2024**  
+Organized by: Himpunan Mahasiswa Statistika, FMIPA UNPAD  
+Scope: ASEAN-wide student competition  
+Theme: *"The Impact of AI on Industry and Economy in Southeast Asia"*  
+Result: **Selected as Top 10 Finalist (Infographic Track)**
+
+---
+
+## 👥 Team
+
+- Farrel Julio Akbar
 - Muhammad Bayu Syuhada  
-- Jeremia Susanto  
+- Jeremia Susanto
 
 ---
 
-## 📝 License
+## 📄 License
 
-This work is shared under the MIT License.
-
+MIT License — feel free to explore and use this project with attribution.
