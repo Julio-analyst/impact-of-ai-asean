@@ -1,3 +1,6 @@
+![R](https://img.shields.io/badge/R-4.1.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 # 📊 The Impact of AI on ASEAN Industry and Economy
 
 > 🏅 **Top 10 Finalist** — Infographic Competition RASIO 8.0 (ASEAN-level)  
