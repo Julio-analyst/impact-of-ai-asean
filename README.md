@@ -1,5 +1,6 @@
-![R](https://img.shields.io/badge/R-4.1.0-blue)
+![Python](https://img.shields.io/badge/Python-3.10-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Made with Jupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange)
 
 # 📊 The Impact of AI on ASEAN Industry and Economy
 
