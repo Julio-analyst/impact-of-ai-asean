@@ -5,97 +5,115 @@
 # 📊 The Impact of AI on ASEAN Industry and Economy
 
 > 🏅 **Top 10 Finalist** — Infographic Competition RASIO 8.0 (ASEAN-level)  
-> 🏛️ Organized by FMIPA Universitas Padjadjaran — *Statistics Day 2024*
+> 🏩 Organized by FMIPA Universitas Padjadjaran — *Statistics Day 2024*
 
 ---
 
-## 🎯 Overview
+## 📌 Overview
 
-Artificial Intelligence (AI) is reshaping Southeast Asia’s industrial landscape and accelerating digital economic growth.  
-In this project, we **visualize** and **forecast** the impact of AI adoption on GDP by industry in ASEAN countries using **deep learning (LSTM)**.
+This project explores how **Artificial Intelligence (AI)** adoption is reshaping industrial productivity and economic growth across **ASEAN countries**.
+We forecast **GDP by industry** using deep learning models and summarize results in an infographic format for public understanding.
 
-- 📍 **Focus**: Predictive modeling of ASEAN GDP by industry  
-- 🧪 **Method**: LSTM Neural Network (TensorFlow)  
-- 🎨 **Output**: Infographic finalist of RASIO 8.0 SE-ASEAN competition
-
----
-
-## 🧵 Storyline
-
-1. **Background**  
-   Southeast Asia is a key player in global digital transformation. With 72% of companies worldwide using AI, it has become a core driver of industrial productivity.
-
-2. **Research Focus**  
-   - Analyze AI adoption across sectors: Tech, Finance, Government, Healthcare, etc.  
-   - Forecast GDP industry growth using LSTM neural networks
-
-3. **Key Insights**
-   - 📈 ASEAN GDP by industry forecasted to reach **$3722 Bn USD by 2025**  
-   - 💡 Highest AI adoption sectors: Tech (17%), Finance (15%), Telecom (15%)  
-   - 🌏 Top GDP contributors by manufacturing:  
-     - 🇹🇭 Thailand (27%)  
-     - 🇲🇾 Malaysia (24.8%)  
-     - 🇸🇬 Singapore (21.6%)  
-     - 🇮🇩 Indonesia (18.3%)
-
-4. **Real-world AI Use Cases in Manufacturing**
-   - 🤖 Robotics: Amazon (pick, pack, transfer)  
-   - 🛠️ Predictive Maintenance: INM (water hydrants, D.C.)  
-   - ✅ Quality Control: Samsung & Nvidia (chip production)  
-   - 🚚 Supply Chain: BMW (demand & inventory optimization)
+- 📍 **Region**: Southeast Asia (ASEAN)  
+- 🌐 **Scope**: Industry-level economic forecasting  
+- 🤖 **Model**: LSTM Neural Network with time series data
 
 ---
 
-## 🧠 Forecasting Model (LSTM)
+## 🧵 Storyline & Key Highlights
 
-📁 [`FORECASTING.ipynb`](./FORECASTING.ipynb)  
-🔧 **Tech Stack**: TensorFlow, Keras, Pandas, Matplotlib  
-🔍 **Steps**:
-- Scaled time-series GDP data with `MinMaxScaler`  
-- Sliding window sequence of 5 years  
-- Trained LSTM to predict future GDP  
-- Evaluated with MSE (Mean Squared Error)
+### 1. Background
+- 72% of companies globally are adopting AI.
+- Southeast Asia is emerging as a digital transformation hub.
 
-> 📊 **Result**: Model predicts **2.74% GDP growth** in 2025.
+### 2. Research Focus
+- Analyze AI adoption in key sectors: Tech, Finance, Government, Healthcare
+- Forecast GDP growth by industry using LSTM
+
+### 3. Key Insights
+- ASEAN GDP by industry forecasted to reach **$3722 Bn USD by 2025**
+- Highest AI adoption: **Tech (17%)**, **Finance (15%)**, **Telecom (15%)**
+- Top manufacturing-based GDP contributors:  
+  🇹🇭 Thailand (27%), 🇲🇾 Malaysia (24.8%), 🇸🇬 Singapore (21.6%), 🇮🇩 Indonesia (18.3%)
+
+### 4. Real-world Use Cases in Manufacturing
+- 🤖 Robotics Automation: Amazon warehouses
+- 🛠️ Predictive Maintenance: Infrastructure Monitoring
+- ✅ Quality Control: Samsung, Nvidia chip lines
+- 🚚 Supply Chain Optimization: BMW inventory flow
 
 ---
 
-## 📂 Project Structure
+## 🧠 Forecasting Model
+
+> **LSTM (Long Short-Term Memory)** was used for multi-year GDP trend forecasting.
+
+- Scaled time-series data using MinMaxScaler
+- Built LSTM model with sliding windows (5-year sequences)
+- Trained on historical GDP by industry (2015–2022)
+- Evaluated with MSE loss metric
+
+**📊 Result:** Model predicts **~2.74% GDP growth** in 2025
+
+---
+
+## 📁 Project Structure
 
 ```
 impact-of-ai-asean/
-│
-├── forecasting-notebook.ipynb     # Main LSTM modeling notebook
-├── data/Book1.csv                 # Raw GDP data (2015–2022)
+├── forecasting-notebook.ipynb        # Main LSTM model
+├── data/Book1.csv                    # Raw GDP data
 ├── images/
-│   ├── infographic-final.png      # Infographic design
-│   └── chart_gdp_trend.png        # Forecast visualization
-├── certificates/                  # Official proof of finalist
-│   └── RASIO_Farrel_Certificate.pdf
+│   ├── infographic-final.png         # Competition infographic
+│   └── chart_gdp_trend.png          # Forecast visualization
+├── certificates/
+│   └── RASIO_Farrel_Certificate.pdf # Proof of finalist
 ├── originality-statement.pdf
 └── README.md
 ```
 
 ---
 
-## 🏆 Competition Details
+## 🏆 Competition Achievement
 
-**🎓 RASIO 8.0 — Padjadjaran Statistics Olympiad 2024**  
+**RASIO 8.0** — Padjadjaran Statistics Olympiad 2024  
 Organized by: Himpunan Mahasiswa Statistika, FMIPA UNPAD  
-Scope: ASEAN-wide student competition  
+Track: Infographic Competition (ASEAN-wide)  
 Theme: *"The Impact of AI on Industry and Economy in Southeast Asia"*  
-Result: **Selected as Top 10 Finalist (Infographic Track)**
+✨ **Selected as Top 10 Finalist** (Infographic Track)
 
 ---
 
-## 👥 Team
-
+## 👨‍💼 Team Members
 - Farrel Julio Akbar
-- Muhammad Bayu Syuhada  
+- Muhammad Bayu Syuhada
 - Jeremia Susanto
 
 ---
 
-## 📄 License
+## 🛠️ Tools & Stack
+- Python 3.10  
+- Jupyter Notebook  
+- TensorFlow / Keras (LSTM)  
+- Pandas, Matplotlib  
+- Time Series Forecasting, Scaling, Sliding Window
 
-MIT License — feel free to explore and use this project with attribution.
+---
+
+## 📚 References
+- [TensorFlow Docs](https://www.tensorflow.org/)
+- [Keras LSTM Guide](https://keras.io/api/layers/recurrent_layers/lstm/)
+- [World Bank GDP Data](https://data.worldbank.org/indicator/NY.GDP.MKTP.CD)
+- [AI Adoption Reports - McKinsey](https://www.mckinsey.com/capabilities/quantumblack/our-insights/global-survey-the-state-of-ai-in-2022)
+
+---
+
+## 📄 License
+MIT License — Free to explore, fork, and reuse with attribution.
+
+---
+
+## 📬 Contact
+- 🌐 [LinkedIn](https://www.linkedin.com/in/farrel-julio-427143288)  
+- 📂 [Portfolio (Notion)](https://linktr.ee/Julio-analyst)  
+- ✉️ farelrel12345@gmail.com
